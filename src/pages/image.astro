@@ -1,0 +1,19 @@
+---
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import image2 from "../assets/image2.jpg";
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+    <div style="height: 500vh; border: 10px solid red;">
+        <p>You are in image.</p>
+        <p>Scroll down to view the image.</p>
+
+        <a href="/">Go to Index</a>
+    </div>
+    <Image src={image2} alt="" widths={[400, 800]} sizes="400px" width="400" />
+</Layout>
