@@ -1,11 +1,5 @@
 ---
-import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
-
-import image1 from "../assets/image1.jpg";
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
@@ -15,5 +9,10 @@ import image1 from "../assets/image1.jpg";
 
         <a href="/image">Go to Image</a>
     </div>
-    <Image src={image1} alt="" widths={[400, 800]} sizes="400px" width="400" />
+    <img
+        src="https://picsum.photos/id/1/1000/1000"
+        alt=""
+        loading="lazy"
+        decoding="async"
+    />
 </Layout>
